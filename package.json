@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/fhabhishektiwari/nodetutlearning#readme",
   "dependencies": {
+    "nodemailer": "^6.7.7",
     "upper-case": "^2.0.2"
   }
 }
