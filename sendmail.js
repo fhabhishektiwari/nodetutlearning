@@ -6,7 +6,11 @@ var transport=nodeMailer.createTransport({
     requireTLS:true,
     auth:{
         user:'abhishektiwarifh@gmail.com',
+<<<<<<< HEAD
         pass:'',//type your password here....
+=======
+        pass:''//type your password here,
+>>>>>>> 8ce3fc71ca6b45a2d7e3e90d85e550cba0342c61
     }
 })
 
