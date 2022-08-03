@@ -7,14 +7,14 @@ const router=express.Router();
 const checkUrl=require('./middleware');
 
 app.get('/',(req,res)=>{
-    res.send("Home Page");
+    res.sendFile(__dirname+"/home.html");
 });
 
 router.get('/about',checkUrl,(req,res)=>{
-    res.send("About Page");
+    res.sendFile(__dirname+"/about.html");
 });
 router.get('/login',checkUrl,(req,res)=>{
-    res.send("Login Page");
+    res.sendFile(__dirname+"/login.html");
 });
 app.use("/",router);
 app.listen(3000);
