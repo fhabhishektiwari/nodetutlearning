@@ -1,7 +1,12 @@
 const http=require("http");
 const hostName="127.0.0.1";
 const port=8080;
-
+const page=`<h1>Welcome to Home Page</h1>
+<h5>Contact us</h5>
+<p><input type='text' placeholder='Enter Email Address'/></p>
+<p><input type='tel' placeholder='Enter Contact Number'/></p>
+<p><input type='button' value='submit'/></p>
+`;
 const server=http.createServer((req,res)=>{
     // console.log(req);
     // res.statusCode=200;
@@ -22,8 +27,8 @@ const server=http.createServer((req,res)=>{
         res.setHeader('Content-Type', 'application/json');
         switch (req.url) {
             case "/":
-                res.writeHead(200);
-                res.end("Wellcome to home page");
+                res.writeHead(200,{'Content-Type':'text/html'});
+                res.end(page);
                 break;
             case "/books":
                 res.writeHead(200);
