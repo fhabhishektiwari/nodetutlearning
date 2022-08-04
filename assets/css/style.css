@@ -4,10 +4,10 @@
     box-sizing: border-box;
 }
 body{
-    background-image: url('../../assets/img/panda.jpg');
+    /* background-image: url('../../assets/img/panda.jpg');
     background-repeat: no-repeat;
     background-position: center center;
-    background-size: cover;
+    background-size: cover; */
 }
 .nav{
     background-color: #83d5ef;
@@ -44,4 +44,29 @@ body{
 ul li{
     list-style: none;
     color: red;
+}
+
+.login-page{
+    width: 350px;
+    height: 350px;
+    box-shadow: 0 0 5px #000;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 5px 0 5px 0;
+}
+
+.login-page h1{
+    margin: 8px 0;
+    color: #888;
+}
+
+.login-page form input{
+    width: 100%;
+    padding: 5px 20px;
+}
+.login-page form button{
+    display: block;
+    width: 110px;
+    padding: 8px 12px;
+    margin: 0 auto;
 }

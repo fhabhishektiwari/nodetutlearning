@@ -17,6 +17,7 @@ app.get("/",(req,res)=>{
     res.render('Home');//here give file name Home.ejs  
 })
 app.get("/login",(req,res)=>{
+    console.log(req.query);
     res.render('Login');//here give file name Login.ejs  
 })
 
