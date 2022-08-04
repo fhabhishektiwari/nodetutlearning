@@ -1,5 +1,10 @@
 const express=require('express');
 const app=express();
+
+//middleware:upload static file using static express middleware
+app.use('/assets',express.static("assets"));
+
+
 // template engine(ejs)//npm i ejs
 app.set('view engine','ejs');
 app.get("/profile/:name",(req,res)=>{
