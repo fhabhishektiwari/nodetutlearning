@@ -1,8 +1,13 @@
 const express=require('express');
+var bodyParser = require('body-parser')
+
 const app=express();
+var encoder=bodyParser.urlencoded({extended: true});
+
 
 //middleware:upload static file using static express middleware
 app.use('/assets',express.static("assets"));
+
 
 
 // template engine(ejs)//npm i ejs
@@ -20,5 +25,10 @@ app.get("/login",(req,res)=>{
     console.log(req.query);
     res.render('Login');//here give file name Login.ejs  
 })
+app.post("/login",encoder,(req,res)=>{
+    // console.log(req.body);
+    console.log(req.body.email);
+    res.render('Home');
+});
 
 app.listen(3000);
