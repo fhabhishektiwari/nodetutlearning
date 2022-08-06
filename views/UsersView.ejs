@@ -1,0 +1,23 @@
+<html>
+    <%-include('common/NewNav')-%>  
+  <table>
+    <caption>Users Table</caption>
+    <tr>
+      <th>Id</th>
+      <th>Name</th>
+      <th>Email</th>
+      <th>Address</th>
+    </tr>
+    <% data.forEach((dt)=>{%>
+    <tr>
+      <td><%=dt.id%></td>
+      <td><%=dt.name%></td>
+      <td><%=dt.email%></td>
+      <td><%=dt.address%></td>
+    </tr>
+    <%}) %>
+  </table>
+  
+  <%-include('common/Footer')-%>
+ 
+</html>

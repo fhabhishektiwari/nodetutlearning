@@ -3,12 +3,12 @@
     padding: 0;
     box-sizing: border-box;
 }
-body{
-    /* background-image: url('../../assets/img/panda.jpg');
+/* body{
+    background-image: url('../../assets/img/panda.jpg');
     background-repeat: no-repeat;
     background-position: center center;
-    background-size: cover; */
-}
+    background-size: cover;
+}*/
 .nav{
     background-color: #83d5ef;
     box-shadow: 0 0 5px #000;
@@ -22,7 +22,7 @@ body{
     list-style: none;
 }
 .nav li a{
-    color: #888;
+    color: #fff;
     text-decoration: none;
 }
 
@@ -69,4 +69,62 @@ ul li{
     width: 110px;
     padding: 8px 12px;
     margin: 0 auto;
+}
+
+/* Home Page */
+.home{
+    height: 600px;
+    width: 100%;
+    /* border: 2px solid #000; */
+}
+
+.home h1{
+    margin-top: 12px;
+    text-align: center;
+}
+
+.home p{
+    height: 500px;
+    border: 2px solid #000;
+    overflow: auto;
+}
+table{
+    width: 50%;
+    height: 350px;
+    margin: 0 auto;
+}
+table,th,td{
+    /* border: 1px solid #000; */
+    border-collapse:collapse;
+}
+table th,td{
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+}
+table tr:nth-child(1){
+    background-color: #1286a9 !important;
+    color: #fff;
+}
+
+table tr:nth-child(odd){
+    background-color: #ddd;
+}
+
+table tr:nth-child(even){
+    background-color: #eee;
+}
+/* table td:hover{
+    background-color: none;
+} */
+
+table tr:nth-child(n+2):hover{
+    background-color: #ccc;
+}
+
+footer{
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
+    margin: 20px 0 0;
+    padding: 8px 12px;
 }
